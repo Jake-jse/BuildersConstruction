@@ -2,8 +2,11 @@ package com.jacobevans.buildersconstruction.models;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.hibernate.proxy.HibernateProxy;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Getter
@@ -11,7 +14,6 @@ import java.util.Objects;
 @ToString
 @RequiredArgsConstructor
 @AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "quote_request")
 public class QuoteRequest {
@@ -24,6 +26,10 @@ public class QuoteRequest {
     private String phone;
     private String address;
     private String projectDescription;
+    @CreationTimestamp
+    private LocalDateTime createdOn;
+    @UpdateTimestamp
+    private LocalDateTime updatedOn;
 
     @Override
     public final boolean equals(Object o) {
