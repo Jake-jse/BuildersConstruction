@@ -1,0 +1,78 @@
+:root {
+    --primary-background-color: #222831;
+    --secondary-background-color: #D3D0CB;
+    --primary-text-color: #D3D0CB;
+    --secondary-text-color: #EEEEEE;
+    --tertiary-background-color: #707070;
+    --accent-color: #fa903e;
+}
+
+body {
+    background: linear-gradient(to right, #1a1a1a, #1a1a1a);
+}
+
+p {
+    color: var(--primary-text-color);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #212529, #474f57);
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--secondary-text-color);
+    background: var(--secondary-background-color);
+}
+
+.dropdown-menu.show {
+    background: var(--secondary-background-color);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: var(--tertiary-background-color);
+}
+
+.p-footer {
+    color: var(--tertiary-background-color);
+    display: flex;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.p-footer:hover {
+    color: var(--accent-color);
+
+}
+
+.card-text {
+    color: var(--primary-text-color);
+}
+
+.card-title {
+    color: var(--secondary-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+#successMessage {
+    color: var(--accent-color);
+}
+
+
+
