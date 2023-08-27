@@ -1,0 +1,101 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+</head>
+
+<body>
+<section layout:fragment="content">
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img th:src="@{/assets/carosel-image1.jpg}" class="d-block w-100" alt="carousel images of construction theme #1">
+            </div>
+            <div class="carousel-item">
+              <img th:src="@{/assets/carosel-image2.jpg}" class="d-block w-100" alt="carousel images of construction theme #2">
+            </div>
+            <div class="carousel-item">
+              <img th:src="@{/assets/carosel-image3.jpg}" class="d-block w-100" alt="carousel images of construction theme #3">
+            </div>
+            <div class="carousel-item">
+              <img th:src="@{/assets/carosel-image4.jpg}" class="d-block w-100" alt="carousel images of construction theme #4">
+            </div>
+            <div class="carousel-item">
+              <img th:src="@{/assets/carosel-image5.jpg}" class="d-block w-100" alt="carousel images of construction theme #5">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <p>
+          We are a full-service general contracting company dedicated to giving your home the makeover it deserves. We
+          specialize in everything from home renovations to custom-building and remodeling, including kitchen and
+          bathroom renovations, basement finishing, and deck construction. Our team of experienced professionals will
+          work closely with you throughout the entire process to ensure your satisfaction. We understand that your home
+          is your most valued asset, and we strive to provide quality craftsmanship and exceptional customer service to
+          exceed your expectations and create a space that you will be proud to call home.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <section class="container text-center my-5">
+    <h2>Our Services</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
+      <div class="col">
+        <div class="card h-100 bg-dark text-white border-2 border-white">
+          <img th:src="@{/assets/deck-card.jpg}" class="card-img-top" alt="finished deck">
+          <div class="card-body">
+            <h5 class="card-title">Finished Decks</h5>
+            <p class="card-text">Deck remodeling upgrades and renovates your existing deck, improving its appearance,
+              functionality, and durability. A skilled contractor can transform it into a beautiful, functional, and
+              long-lasting outdoor living area.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100  bg-dark text-white border-2 border-white">
+          <img th:src="@{/assets/basement-card.jpg}" class="card-img-top" alt="finished basement">
+          <div class="card-body">
+            <h5 class="card-title">Remodeled Basements</h5>
+            <p class="card-text">Basement remodeling creates additional living space and improves functionality and
+              appearance. A professional service can transform it into a comfortable, functional area with bedrooms,
+              bathrooms, and storage space.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100  bg-dark text-white border-2 border-white">
+          <img th:src="@{/assets/kitchen-card.jpg}" class="card-img-top" alt="remodeled kitchen">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Kitchens</h5>
+            <p class="card-text">Kitchen remodeling improves functionality, appearance, and value. A professional
+              service can transform it with new counter tops, cabinets, appliances, and lighting while addressing
+              structural issues for a safe and efficient kitchen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+</body>
+</html>
