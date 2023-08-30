@@ -2,9 +2,11 @@ package com.jacobevans.buildersconstruction.controllers;
 
 import com.jacobevans.buildersconstruction.models.QuoteRequest;
 import com.jacobevans.buildersconstruction.services.QuoteRequestService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +28,11 @@ public class QuoteRequestController {
     }
 
     @PostMapping("/contact")
-    public String saveQuote(@ModelAttribute("quoteRequest") QuoteRequest quoteRequest) {
+    public String saveQuote(@Valid @ModelAttribute("quoteRequest") QuoteRequest quoteRequest,
+                            BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "contact";
+        }
         quoteRequestService.saveQuoteRequest(quoteRequest);
         return "redirect:/contact-success";
     }

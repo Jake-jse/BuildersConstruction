@@ -1,6 +1,8 @@
 package com.jacobevans.buildersconstruction.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -21,10 +23,14 @@ public class QuoteRequest {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
+    @NotBlank(message = "Name is required")
     private String name;
+    @NotBlank(message = "Email address is required")
+    @Email(message = "Please provide a valid email address")
     private String email;
     private String phone;
     private String address;
+    @NotBlank(message = "Please provide a short description of your project")
     private String projectDescription;
     @CreationTimestamp
     private LocalDateTime createdOn;
