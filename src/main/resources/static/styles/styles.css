@@ -1,18 +1,22 @@
 :root {
-    --primary-background-color: #222831;
-    --secondary-background-color: #D3D0CB;
-    --primary-text-color: #D3D0CB;
-    --secondary-text-color: #EEEEEE;
-    --tertiary-background-color: #707070;
-    --accent-color: #fa903e;
+    --primary-text-style: 'Roboto', sans-serif;
+
+    --background-color: #181818;
+    --secondary-background-color: #212121;
+    --tertiary-background-color: #3D3D3D;
+    --primary-text-color: #f4f4f4;
+    --secondary-text-color: #AAAAAA;
+
+    --nav-bar-gradient: linear-gradient(to right, #212121, #3D3D3D);
 }
 
 body {
-    background: linear-gradient(to right, #1a1a1a, #1a1a1a);
+    background: var(--background-color);
+    font-family: var(--primary-text-style);
 }
 
 p {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
 }
 
 
@@ -23,56 +27,57 @@ h4,
 h5,
 h6 {
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--secondary-text-color);
-    font-family: 'Roboto', sans-serif;
-}
-
-.navbar {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(to right, #212529, #474f57);
-}
-
-.dropdown-menu .dropdown-item {
-    color: var(--secondary-text-color);
-    background: var(--secondary-background-color);
-}
-
-.dropdown-menu.show {
-    background: var(--secondary-background-color);
-}
-
-.dropdown-menu .dropdown-item:hover {
-    color: var(--tertiary-background-color);
-}
-
-.p-footer {
-    color: var(--tertiary-background-color);
-    display: flex;
-    justify-content: center;
-    transition: color 0.3s ease;
-}
-
-.p-footer:hover {
-    color: var(--accent-color);
-
-}
-
-.card-text {
     color: var(--primary-text-color);
 }
 
-.card-title {
-    color: var(--secondary-text-color);
-    font-family: 'Roboto', sans-serif;
+.navbar {
+    background: var(--nav-bar-gradient);
 }
 
-#successMessage {
-    color: var(--accent-color);
+.dropdown-menu .dropdown-item {
+    color: var(--primary-text-color);
+    background: var(--nav-bar-gradient);
 }
+
+.dropdown-menu.show {
+    background: var(--nav-bar-gradient);
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: var(--secondary-text-color);
+}
+
+.p-footer {
+    color: var(--primary-text-color);
+}
+
+.card-text {
+    color: var(--secondary-text-color);
+}
+
+.card-title {
+    color: var(--primary-text-color);
+}
+
+.custom-form-label {
+    color: var(--secondary-text-color);
+}
+
+.custom-button {
+    background-color: var(--tertiary-background-color);
+    border-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    transition: color 0.3s ease;
+}
+
+.custom-button:hover {
+    color: var(--secondary-text-color);
+}
+
+
 
 
 

@@ -15,7 +15,7 @@
                 <div class="row justify-content-center ">
                     <div class="col-lg-6 col-md-8">
                         <p class="text-center">We would love to hear from you!</p>
-                <form id="QuoteRequestForm" class="text-white text-center shadow" th:object="${quoteRequest}" th:action="@{/contact}" method="post">
+                <form id="QuoteRequestForm" class="custom-form-label text-center p-3" th:object="${quoteRequest}" th:action="@{/contact}" method="post">
                     <div class="form-group mb-1">
                         <label for="name" class="col-form-label">Name</label>
                         <input type="text"
@@ -61,7 +61,7 @@
                     </div>
                     <div class="form-group text-center">
                         <button type="submit"
-                                class="btn btn-primary">Submit</button>
+                                class="custom-button py-2 px-3">Submit</button>
                     </div>
                 </form>
                     </div>
