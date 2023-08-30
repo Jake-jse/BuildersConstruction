@@ -62,8 +62,9 @@ h6 {
     color: var(--primary-text-color);
 }
 
-.custom-form-label {
+.custom-form-control {
     color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
 }
 
 .custom-button {
