@@ -1,4 +1,3 @@
-BuildersConstruction
 This project serves as a dynamic website template designed for small businesses in the general contracting and home improvement sector. It features:
 
 A navigation bar for user-friendly site exploration.
