@@ -1,8 +1,9 @@
-# BuildersConstruction
+This project serves as a dynamic website template designed for small businesses in the general contracting and home improvement sector. It features:
 
-This is a dynamic general contracting themed website that a small business might use.
-It includes a navigation bar for easy navigation. An autoplay carosel on the front page to grab attention.
-There are also some cards to visually display services offerd and a table to show important information like prices.
-There is a contact form for users to submit data to a backend.
+A navigation bar for user-friendly site exploration.
+An autoplay carousel on the homepage to capture visitor interest.
+Service cards that visually represent the range of services offered.
+A contact form with validation, allowing users to submit data to a backend.
+Technologies Used: Spring Boot, Spring MVC, Spring Data, Bootstrap, Thymeleaf
 
-Technologies used include: Spring boot, Bootstrap
+Note: This project is actively maintained, with new features continually being added.
