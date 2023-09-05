@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @Controller
 public class QuoteRequestController {
     private final QuoteRequestService quoteRequestService;
@@ -42,4 +44,12 @@ public class QuoteRequestController {
         return "contact-success";
     }
 
+    @GetMapping("admin/quote-requests")
+    public String showQuoteRequestsPage(Model model) {
+        List<QuoteRequest> quoteRequests = quoteRequestService.findAllQuoteRequests();
+        model.addAttribute("quoteRequests", quoteRequests);
+        return "admin/quote-requests";
+    }
+
 }
+

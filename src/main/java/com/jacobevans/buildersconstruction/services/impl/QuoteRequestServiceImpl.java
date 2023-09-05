@@ -6,6 +6,8 @@ import com.jacobevans.buildersconstruction.services.QuoteRequestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class QuoteRequestServiceImpl implements QuoteRequestService {
     private final QuoteRequestRepository quoteRequestRepository;
@@ -18,5 +20,10 @@ public class QuoteRequestServiceImpl implements QuoteRequestService {
     @Override
     public QuoteRequest saveQuoteRequest(QuoteRequest quoteRequest) {
         return quoteRequestRepository.save(quoteRequest);
+    }
+
+    @Override
+    public List<QuoteRequest> findAllQuoteRequests() {
+        return quoteRequestRepository.findAll();
     }
 }
