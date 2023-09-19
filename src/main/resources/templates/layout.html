@@ -32,9 +32,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" th:href="@{/contact}">Contact</a>
                             </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link" th:href="@{/services}">Services</a>-->
-<!--                            </li>-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" th:href="@{/basement}">Basement</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/deck}">Deck</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/kitchen}">Kitchen</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" th:href="@{/admin/quote-requests}">Admin</a>
                             </li>
