@@ -61,6 +61,7 @@
     <h2>Our Services</h2>
     <div class="row row-cols-1 row-cols-md-3 g-3 mt-3">
       <div class="col">
+        <a th:href="@{/deck}" style="text-decoration: none; color: inherit;">
         <div class="card h-100 bg-dark text-white border-2 border-white">
           <img th:src="@{/assets/deck-card.jpg}" class="card-img-top" alt="finished deck">
           <div class="card-body">
@@ -70,8 +71,10 @@
               long-lasting outdoor living area.</p>
           </div>
         </div>
+        </a>
       </div>
       <div class="col">
+        <a th:href="@{/basement}" style="text-decoration: none; color: inherit;">
         <div class="card h-100  bg-dark text-white border-2 border-white">
           <img th:src="@{/assets/basement-card.jpg}" class="card-img-top" alt="finished basement">
           <div class="card-body">
@@ -81,8 +84,10 @@
               bathrooms, and storage space.</p>
           </div>
         </div>
+        </a>
       </div>
       <div class="col">
+        <a th:href="@{/kitchen}" style="text-decoration: none; color: inherit;">
         <div class="card h-100  bg-dark text-white border-2 border-white">
           <img th:src="@{/assets/kitchen-card.jpg}" class="card-img-top" alt="remodeled kitchen">
           <div class="card-body">
@@ -92,6 +97,7 @@
               structural issues for a safe and efficient kitchen.</p>
           </div>
         </div>
+        </a>
       </div>
     </div>
   </section>
