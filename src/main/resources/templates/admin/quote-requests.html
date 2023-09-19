@@ -28,7 +28,6 @@
               <td th:text="${quoteRequest.projectDescription}"></td>
             </tr>
           </table>
-          <input type="hidden" name="_csrf" th:value="${_csrf.token}" />
           <button type="submit" th:if="${#lists.size(quoteRequests) > 0}">Delete Selected</button>
         </form>
       </div>
