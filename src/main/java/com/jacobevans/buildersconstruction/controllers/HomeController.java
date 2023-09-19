@@ -8,4 +8,13 @@ public class HomeController {
     @GetMapping("/")
     public String index() { return "index"; }
 
+    @GetMapping("/basement")
+    public String basement() { return "basement"; }
+
+    @GetMapping("/deck")
+    public String deck() { return "deck"; }
+
+    @GetMapping("/kitchen")
+    public String kitchen() { return "kitchen"; }
+
 }
