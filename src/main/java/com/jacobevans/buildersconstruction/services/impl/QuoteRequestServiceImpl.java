@@ -18,6 +18,13 @@ public class QuoteRequestServiceImpl implements QuoteRequestService {
     }
 
     @Override
+    public void deleteSelected(List<Long> selectedIds) {
+        if (selectedIds != null && !selectedIds.isEmpty()) {
+            quoteRequestRepository.deleteAllById(selectedIds);
+        }
+    }
+
+    @Override
     public QuoteRequest saveQuoteRequest(QuoteRequest quoteRequest) {
         return quoteRequestRepository.save(quoteRequest);
     }

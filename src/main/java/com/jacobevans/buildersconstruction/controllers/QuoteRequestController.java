@@ -10,6 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -49,6 +50,13 @@ public class QuoteRequestController {
         List<QuoteRequest> quoteRequests = quoteRequestService.findAllQuoteRequests();
         model.addAttribute("quoteRequests", quoteRequests);
         return "admin/quote-requests";
+    }
+
+
+    @PostMapping("/deleteSelected")
+    public String deleteSelected(@RequestParam("selectedIds") List<Long> selectedIds) {
+        quoteRequestService.deleteSelected(selectedIds);
+        return "redirect:admin/quote-requests";
     }
 
 }
