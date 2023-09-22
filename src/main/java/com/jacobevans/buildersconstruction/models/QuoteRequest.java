@@ -15,13 +15,11 @@ import java.util.Objects;
 @Setter
 @ToString
 @RequiredArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "quote_request")
 public class QuoteRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
     private Long id;
     @NotBlank(message = "Name is required")
     private String name;
