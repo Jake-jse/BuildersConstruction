@@ -17,6 +17,7 @@ This project serves as a dynamic website template specifically designed for smal
 - Spring Data
 - Bootstrap
 - Thymeleaf
+- MySql
 
 ## Note
 This project is actively maintained, with new features continually being added. 
